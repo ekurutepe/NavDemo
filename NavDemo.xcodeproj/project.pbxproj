@@ -15,7 +15,7 @@
 		87DD57C51BA318A600FDDAB7 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DD57C41BA318A600FDDAB7 /* TableViewController.swift */; };
 		87EB6AE51BA32122004C24AE /* GenericViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB6AE41BA32122004C24AE /* GenericViewController.swift */; };
 		87EB6AE81BA324E9004C24AE /* TabBarAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB6AE71BA324E9004C24AE /* TabBarAnimator.swift */; };
-		87EB6AEA1BA329A7004C24AE /* AnimatedTabBarControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB6AE91BA329A7004C24AE /* AnimatedTabBarControllerDelegate.swift */; };
+		87EB6AEC1BA32E7E004C24AE /* AnimatedTabBarControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB6AEB1BA32E7E004C24AE /* AnimatedTabBarControllerDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +41,7 @@
 		87DD57C41BA318A600FDDAB7 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		87EB6AE41BA32122004C24AE /* GenericViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericViewController.swift; sourceTree = "<group>"; };
 		87EB6AE71BA324E9004C24AE /* TabBarAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarAnimator.swift; sourceTree = "<group>"; };
-		87EB6AE91BA329A7004C24AE /* AnimatedTabBarControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnimatedTabBarControllerDelegate.swift; path = ../AnimatedTabBarControllerDelegate.swift; sourceTree = "<group>"; };
+		87EB6AEB1BA32E7E004C24AE /* AnimatedTabBarControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedTabBarControllerDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +83,7 @@
 		87DD579D1BA315A700FDDAB7 /* NavDemo */ = {
 			isa = PBXGroup;
 			children = (
-				87EB6AE91BA329A7004C24AE /* AnimatedTabBarControllerDelegate.swift */,
+				87EB6AEB1BA32E7E004C24AE /* AnimatedTabBarControllerDelegate.swift */,
 				87EB6AE61BA324CB004C24AE /* Animators */,
 				87EB6AE41BA32122004C24AE /* GenericViewController.swift */,
 				87DD57C41BA318A600FDDAB7 /* TableViewController.swift */,
@@ -230,10 +230,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				87EB6AE51BA32122004C24AE /* GenericViewController.swift in Sources */,
+				87EB6AEC1BA32E7E004C24AE /* AnimatedTabBarControllerDelegate.swift in Sources */,
 				87DD57A11BA315A700FDDAB7 /* AppDelegate.swift in Sources */,
 				87EB6AE81BA324E9004C24AE /* TabBarAnimator.swift in Sources */,
 				87DD57C51BA318A600FDDAB7 /* TableViewController.swift in Sources */,
-				87EB6AEA1BA329A7004C24AE /* AnimatedTabBarControllerDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

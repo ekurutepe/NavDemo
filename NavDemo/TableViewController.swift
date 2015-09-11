@@ -9,8 +9,8 @@
 import UIKit
 
 let items = [
+    "🍊 Oranges" : ["Valencia", "Washington"],
     "🍎 Apples" : ["Belle de Boskoop", "Golden Delicious", "Granny Smith"],
-    "🍊 Oranges" : ["Valencia", "Washington"]
 ]
 
 class TableViewController: UITableViewController {
@@ -50,7 +50,7 @@ class TableViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
 
-        cell.textLabel?.text = items.keys.array.reverse()[indexPath.item]
+        cell.textLabel?.text = items.keys.array[indexPath.item]
 
         return cell
     }
