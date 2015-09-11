@@ -19,6 +19,7 @@ class GenericViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         label.text = self.title
+        self.navigationItem.title = title
     }
 
     override func didReceiveMemoryWarning() {

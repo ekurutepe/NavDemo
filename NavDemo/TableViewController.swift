@@ -26,6 +26,18 @@ class TableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -122,8 +134,20 @@ class TableViewController: UITableViewController {
         let vc = self.storyboard?.instantiateViewControllerWithIdentifier("GenericViewController") as! GenericViewController
         
         vc.title = title
+        vc.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Burger",
+            style: .Plain,
+            target: self,
+            action: "navigateBack:")
         
-        return vc
+        let navcon = UINavigationController(rootViewController: vc)
+        
+        
+        
+        return navcon
+    }
+    
+    func navigateBack(sender: AnyObject) {
+        self.navigationController?.popViewControllerAnimated(true)
     }
 
 
