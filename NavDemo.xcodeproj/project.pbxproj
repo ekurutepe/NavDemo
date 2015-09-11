@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		87DD57A11BA315A700FDDAB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DD57A01BA315A700FDDAB7 /* AppDelegate.swift */; };
-		87DD57A31BA315A700FDDAB7 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DD57A21BA315A700FDDAB7 /* FirstViewController.swift */; };
-		87DD57A51BA315A700FDDAB7 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DD57A41BA315A700FDDAB7 /* SecondViewController.swift */; };
 		87DD57A81BA315A700FDDAB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87DD57A61BA315A700FDDAB7 /* Main.storyboard */; };
 		87DD57AA1BA315A700FDDAB7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87DD57A91BA315A700FDDAB7 /* Images.xcassets */; };
 		87DD57AD1BA315A700FDDAB7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87DD57AB1BA315A700FDDAB7 /* LaunchScreen.xib */; };
 		87DD57B91BA315A700FDDAB7 /* NavDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DD57B81BA315A700FDDAB7 /* NavDemoTests.swift */; };
+		87DD57C51BA318A600FDDAB7 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DD57C41BA318A600FDDAB7 /* TableViewController.swift */; };
+		87EB6AE51BA32122004C24AE /* GenericViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB6AE41BA32122004C24AE /* GenericViewController.swift */; };
+		87EB6AE81BA324E9004C24AE /* TabBarAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB6AE71BA324E9004C24AE /* TabBarAnimator.swift */; };
+		87EB6AEA1BA329A7004C24AE /* AnimatedTabBarControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EB6AE91BA329A7004C24AE /* AnimatedTabBarControllerDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,14 +32,16 @@
 		87DD579B1BA315A700FDDAB7 /* NavDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87DD579F1BA315A700FDDAB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87DD57A01BA315A700FDDAB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		87DD57A21BA315A700FDDAB7 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		87DD57A41BA315A700FDDAB7 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		87DD57A71BA315A700FDDAB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		87DD57A91BA315A700FDDAB7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		87DD57AC1BA315A700FDDAB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		87DD57B21BA315A700FDDAB7 /* NavDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NavDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		87DD57B71BA315A700FDDAB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87DD57B81BA315A700FDDAB7 /* NavDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavDemoTests.swift; sourceTree = "<group>"; };
+		87DD57C41BA318A600FDDAB7 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		87EB6AE41BA32122004C24AE /* GenericViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericViewController.swift; sourceTree = "<group>"; };
+		87EB6AE71BA324E9004C24AE /* TabBarAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarAnimator.swift; sourceTree = "<group>"; };
+		87EB6AE91BA329A7004C24AE /* AnimatedTabBarControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnimatedTabBarControllerDelegate.swift; path = ../AnimatedTabBarControllerDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +83,11 @@
 		87DD579D1BA315A700FDDAB7 /* NavDemo */ = {
 			isa = PBXGroup;
 			children = (
+				87EB6AE91BA329A7004C24AE /* AnimatedTabBarControllerDelegate.swift */,
+				87EB6AE61BA324CB004C24AE /* Animators */,
+				87EB6AE41BA32122004C24AE /* GenericViewController.swift */,
+				87DD57C41BA318A600FDDAB7 /* TableViewController.swift */,
 				87DD57A01BA315A700FDDAB7 /* AppDelegate.swift */,
-				87DD57A21BA315A700FDDAB7 /* FirstViewController.swift */,
-				87DD57A41BA315A700FDDAB7 /* SecondViewController.swift */,
 				87DD57A61BA315A700FDDAB7 /* Main.storyboard */,
 				87DD57A91BA315A700FDDAB7 /* Images.xcassets */,
 				87DD57AB1BA315A700FDDAB7 /* LaunchScreen.xib */,
@@ -113,6 +119,14 @@
 				87DD57B71BA315A700FDDAB7 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		87EB6AE61BA324CB004C24AE /* Animators */ = {
+			isa = PBXGroup;
+			children = (
+				87EB6AE71BA324E9004C24AE /* TabBarAnimator.swift */,
+			);
+			name = Animators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,9 +229,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87DD57A51BA315A700FDDAB7 /* SecondViewController.swift in Sources */,
+				87EB6AE51BA32122004C24AE /* GenericViewController.swift in Sources */,
 				87DD57A11BA315A700FDDAB7 /* AppDelegate.swift in Sources */,
-				87DD57A31BA315A700FDDAB7 /* FirstViewController.swift in Sources */,
+				87EB6AE81BA324E9004C24AE /* TabBarAnimator.swift in Sources */,
+				87DD57C51BA318A600FDDAB7 /* TableViewController.swift in Sources */,
+				87EB6AEA1BA329A7004C24AE /* AnimatedTabBarControllerDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +429,7 @@
 				87DD57BE1BA315A700FDDAB7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		87DD57BF1BA315A700FDDAB7 /* Build configuration list for PBXNativeTarget "NavDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +438,7 @@
 				87DD57C11BA315A700FDDAB7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
